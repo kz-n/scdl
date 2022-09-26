@@ -1,5 +1,3 @@
-import {VercelRequest, VercelResponse} from "@vercel/node";
-
 const scdl = require('soundcloud-downloader').default
 const fs = require('fs')
 
