@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>SoundCloud Downloader - Download any SoundCloud song for free</title>
+        <link rel="stylesheet" href="index.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    </head>
+    <body>
+        <div style="display: none">
+            Use the downloader to download any SoundCloud song for free. Enter the URL you want to convert and click Download to get your song!
+        </div>
+        <div class="title-container">
+            <h1>
+                SoundCloud Downloader
+            </h1>
+            <h1 class="credit">
+                made by <a href="https://kz-n.net">kz-n</a>
+            </h1>
+        </div>
+        <div class="content-container">
+            <input class="url-input" type="url" value="Enter any url..." id="url-input"></input>
+            <button class="url-download" onclick="onButtonDownloadClick()">Download</button>
+        </div>
+        <div id="result">
+            <div class="content-container">
+                <h1>
+                    Result
+                </h1>
+            </div>
+            <div class="result-container"">
+                <img id="result-image"">
+                <div class="result-info-container">
+                    <h2 class="result-info-text" id="result-info-title">
+                        Song Title
+                    </h2>
+                    <h3 class="result-info-text" id="result-info-artist">
+                        Song Artist
+                    </h3>
+                </div>
+            </div>
+        </div>
+        
+        <script src="website.js"></script>
+    </body>
+</html>
